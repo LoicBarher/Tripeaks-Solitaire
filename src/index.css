@@ -1,0 +1,62 @@
+body {
+  height: 100vh;  
+  margin: 0px;
+  background: #82cb82;
+  background: linear-gradient(144deg,#82cb82 0%, #1b5a1b 90%);
+  background: -webkit-linear-gradient(144deg,#82cb82 0%, #1b5a1b 90%);
+  background: -moz-linear-gradient(144deg,#82cb82 0%, #1b5a1b 90%);
+}
+
+.game{
+  height: 100vh;
+}
+
+.board{
+  padding-top: 1%;
+  text-align: center;
+  height: 75vh;
+
+  /* Zone du board sur 75% de la hauteur de page */
+}
+
+.hand{
+  float: left;
+  height: 25vh;
+}
+
+.card{
+  border: 0;
+  border-radius: 30px;
+  width: 8vw;
+  padding: 0px;
+  margin-right: 1px;
+}
+
+.board .board-row-1, .board .board-row-2, .board .board-row-3{
+  padding:1px;
+}
+
+.hand .hand-row{
+  width: 75vw;
+  padding-left:5%;
+}
+
+.hand .hand-row .inactive-hand-cards .card{
+  margin: -4%;
+}
+
+.hand .hand-row .active-hand-card .card{
+  margin-left: 5%;
+}
+
+.hand .joker-button{
+  float:right;
+  margin-top:50%;
+}
+
+img{
+  max-width: 100%;
+  margin:0px;
+  padding:0px;
+  float: left;
+}
