@@ -1,27 +1,30 @@
 body {
-  height: 100vh;  
-  margin: 0px;
+  margin: 0;
   background: #82cb82;
   background: linear-gradient(144deg,#82cb82 0%, #1b5a1b 90%);
   background: -webkit-linear-gradient(144deg,#82cb82 0%, #1b5a1b 90%);
   background: -moz-linear-gradient(144deg,#82cb82 0%, #1b5a1b 90%);
+  height: 100vh; /* 100% de la hauteur de visualisation */
+  overflow: hidden; /* Empêche le défilement */
 }
 
 .game{
   height: 100vh;
+  /*justify-content: space-between;*/
 }
-
+  
+/* Zone du board sur 75% de la hauteur de page */
 .board{
-  padding-top: 1%;
-  text-align: center;
   height: 75vh;
-
-  /* Zone du board sur 75% de la hauteur de page */
+  text-align: center;
+  overflow: auto; /* Gère le chevauchement entre les composants Hand et Board */
 }
 
 .hand{
   float: left;
   height: 25vh;
+  display: flex;
+  align-items: center;
 }
 
 .card{
@@ -60,3 +63,5 @@ img{
   padding:0px;
   float: left;
 }
+
+
